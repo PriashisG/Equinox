@@ -1,0 +1,42 @@
+[gd_scene load_steps=7 format=3 uid="uid://c6all0fcej3av"]
+
+[ext_resource type="Script" path="res://scenes/restart.gd" id="1_ys0dc"]
+[ext_resource type="Texture2D" uid="uid://dh5lsy3od422q" path="res://assets/main menu/background.png" id="2_5sp3k"]
+[ext_resource type="Texture2D" uid="uid://ck5la6b50cdbc" path="res://assets/Restart/2_-_Restart_button.png" id="3_mpli8"]
+[ext_resource type="Texture2D" uid="uid://dgrf16mxitawl" path="res://assets/Restart/2_-_Restart_button_with_click.png" id="4_cprk1"]
+[ext_resource type="Texture2D" uid="uid://meeiiyx2mn0q" path="res://assets/Restart/3_-_menu_button.png" id="5_lajd7"]
+[ext_resource type="Texture2D" uid="uid://biu2co7oaphgy" path="res://assets/Restart/3_-_menu_button_with_click.png" id="6_ysth5"]
+
+[node name="Restart" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ys0dc")
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(565.131, 416.5)
+scale = Vector2(0.606496, 0.606496)
+texture = ExtResource("2_5sp3k")
+
+[node name="TextureButton" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 391.0
+offset_top = 206.0
+offset_right = 751.0
+offset_bottom = 312.0
+texture_normal = ExtResource("3_mpli8")
+texture_hover = ExtResource("4_cprk1")
+
+[node name="TextureButton2" type="TextureButton" parent="."]
+offset_left = 391.0
+offset_top = 321.0
+offset_right = 751.0
+offset_bottom = 427.0
+texture_normal = ExtResource("5_lajd7")
+texture_hover = ExtResource("6_ysth5")
+
+[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]
+[connection signal="pressed" from="TextureButton2" to="." method="_on_texture_button_2_pressed"]

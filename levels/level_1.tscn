@@ -1,0 +1,292 @@
+[gd_scene load_steps=30 format=3 uid="uid://c2bqhemljwggg"]
+
+[ext_resource type="PackedScene" uid="uid://cram4t48cdgv4" path="res://scenes/player1.tscn" id="1_5skjb"]
+[ext_resource type="Script" path="res://levels/game.gd" id="1_nsmrk"]
+[ext_resource type="Texture2D" uid="uid://c2qnh4hfobedv" path="res://assets/background/7_-_Background_05.png" id="2_ft2va"]
+[ext_resource type="Texture2D" uid="uid://def3h3dx370qp" path="res://assets/background/6_-_Background_-_04.png" id="3_y00eb"]
+[ext_resource type="Texture2D" uid="uid://1hwd8yajlcms" path="res://assets/background/5_-_Background_03.png" id="4_tkfn2"]
+[ext_resource type="Texture2D" uid="uid://cnexgk535cd6x" path="res://assets/background/4_-_Fog_-_Background_02.png" id="5_w658w"]
+[ext_resource type="Texture2D" uid="uid://2om5xm048t4u" path="res://assets/background/3_-_Background_01.png" id="6_8fuhb"]
+[ext_resource type="Texture2D" uid="uid://dv6c1eb71ajqe" path="res://assets/background/2_-_Foreground.png" id="7_1n4b7"]
+[ext_resource type="Texture2D" uid="uid://c5cmg3b5qxqcs" path="res://assets/background/1_-_Grass.png" id="8_438c5"]
+[ext_resource type="PackedScene" uid="uid://bft57ay5ip28f" path="res://scenes/player2.tscn" id="9_p3aea"]
+[ext_resource type="PackedScene" uid="uid://b2la8hop1tx6d" path="res://scenes/gate.tscn" id="11_6w2pr"]
+[ext_resource type="PackedScene" uid="uid://c5via1dabb808" path="res://scenes/box.tscn" id="12_5l8r2"]
+[ext_resource type="PackedScene" uid="uid://djg1ohxo3561b" path="res://scenes/pressure_plate.tscn" id="13_cjcrh"]
+[ext_resource type="Script" path="res://scripts/pressure_plate.gd" id="14_lbw7f"]
+[ext_resource type="Script" path="res://scripts/finish_line_1.gd" id="15_sstje"]
+[ext_resource type="Texture2D" uid="uid://dyuhsrtjl0pfw" path="res://assets/Restart/5_-_restart.png" id="16_gk6kg"]
+[ext_resource type="Texture2D" uid="uid://db4sdmlbm0031" path="res://assets/Restart/5_-_restart_with_click.png" id="17_sgjqv"]
+[ext_resource type="Script" path="res://scripts/restart.gd" id="18_k22yt"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_nh0df"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_nbjyi"]
+
+[sub_resource type="Animation" id="Animation_c27py"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-30, 144)]
+}
+
+[sub_resource type="Animation" id="Animation_08dxh"]
+resource_name = "close"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(204, -268), Vector2(204, 152)]
+}
+
+[sub_resource type="Animation" id="Animation_hcq8i"]
+resource_name = "open"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(204, 152), Vector2(204, -268)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_baakp"]
+_data = {
+"RESET": SubResource("Animation_c27py"),
+"close": SubResource("Animation_08dxh"),
+"open": SubResource("Animation_hcq8i")
+}
+
+[sub_resource type="Animation" id="Animation_5phf8"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-212, 134)]
+}
+
+[sub_resource type="Animation" id="Animation_il81f"]
+resource_name = "down"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-162, 134), Vector2(-162, 170)]
+}
+
+[sub_resource type="Animation" id="Animation_padiw"]
+resource_name = "up"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-162, 170), Vector2(-162, 134)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_njjsc"]
+_data = {
+"RESET": SubResource("Animation_5phf8"),
+"down": SubResource("Animation_il81f"),
+"up": SubResource("Animation_padiw")
+}
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_1gy5n"]
+
+[node name="Level1" type="Node2D"]
+script = ExtResource("1_nsmrk")
+
+[node name="player1" parent="." groups=["player", "weight"] instance=ExtResource("1_5skjb")]
+position = Vector2(-432, 118)
+collision_mask = 25
+
+[node name="Camera2D" type="Camera2D" parent="player1"]
+position = Vector2(-75, -72)
+zoom = Vector2(1.25, 1.25)
+limit_left = -935
+limit_top = -265
+limit_right = 830
+position_smoothing_speed = 100.0
+
+[node name="ParallaxBackground2" type="ParallaxBackground" parent="."]
+
+[node name="background n-2" type="ParallaxLayer" parent="ParallaxBackground2"]
+motion_scale = Vector2(2, 1)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground2/background n-2"]
+texture = ExtResource("6_8fuhb")
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="main bg" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/main bg"]
+texture = ExtResource("2_ft2va")
+
+[node name="background n" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0.1, 1)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/background n"]
+position = Vector2(-5, -18)
+texture = ExtResource("3_y00eb")
+
+[node name="background n -1" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0.2, 1)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/background n -1"]
+position = Vector2(7, 16)
+texture = ExtResource("4_tkfn2")
+
+[node name="fog" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0.3, 1)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/fog"]
+position = Vector2(2, 29)
+texture = ExtResource("5_w658w")
+
+[node name="foreground" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/foreground"]
+position = Vector2(12, 249)
+texture = ExtResource("7_1n4b7")
+
+[node name="grass" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(0, 40)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/grass"]
+position = Vector2(49, 99)
+texture = ExtResource("8_438c5")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+collision_mask = 7
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(8, 125)
+shape = SubResource("WorldBoundaryShape2D_nh0df")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="."]
+position = Vector2(-812, 32)
+rotation = -4.6876
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
+shape = SubResource("WorldBoundaryShape2D_nbjyi")
+
+[node name="player2" parent="." groups=["player", "weight"] instance=ExtResource("9_p3aea")]
+position = Vector2(-376, 101)
+collision_mask = 27
+
+[node name="Camera2D2" type="Camera2D" parent="player2"]
+position = Vector2(-77, -68)
+zoom = Vector2(1.25, 1.25)
+limit_left = -935
+limit_top = -265
+limit_right = 830
+position_smoothing_speed = 100.0
+
+[node name="gate" parent="." instance=ExtResource("11_6w2pr")]
+position = Vector2(-30, 144)
+collision_layer = 16
+
+[node name="gateAnimation" type="AnimationPlayer" parent="gate"]
+libraries = {
+"": SubResource("AnimationLibrary_baakp")
+}
+autoplay = "close"
+playback_default_blend_time = 0.5
+
+[node name="box" parent="." groups=["weight"] instance=ExtResource("12_5l8r2")]
+position = Vector2(408, 124)
+collision_layer = 2
+collision_mask = 3
+
+[node name="pressure_plate" parent="." instance=ExtResource("13_cjcrh")]
+position = Vector2(-212, 134)
+collision_layer = 8
+script = ExtResource("14_lbw7f")
+
+[node name="pressureAnimation" type="AnimationPlayer" parent="pressure_plate"]
+libraries = {
+"": SubResource("AnimationLibrary_njjsc")
+}
+autoplay = "up"
+playback_default_blend_time = 0.5
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_mask = 4
+script = ExtResource("15_sstje")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(937, 43)
+rotation = -1.58212
+shape = SubResource("WorldBoundaryShape2D_1gy5n")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+offset_left = 42.0
+offset_top = 10.0
+offset_right = 328.0
+offset_bottom = 160.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 60
+text = "Escaped: 0"
+
+[node name="TextureButton" type="TextureButton" parent="CanvasLayer"]
+offset_left = 1095.0
+offset_top = 15.0
+offset_right = 1135.0
+offset_bottom = 55.0
+texture_normal = ExtResource("16_gk6kg")
+texture_hover = ExtResource("17_sgjqv")
+script = ExtResource("18_k22yt")
+
+[node name="Node" type="Node" parent="."]
+
+[node name="Label" type="Label" parent="Node"]
+z_index = -3
+offset_left = 245.0
+offset_top = -84.0
+offset_right = 658.0
+offset_bottom = -50.0
+theme_override_colors/font_color = Color(0.404511, 0.404511, 0.404511, 1)
+theme_override_font_sizes/font_size = 24
+text = "Can a shadow touch, or only haunt?"
+
+[connection signal="pressed" from="CanvasLayer/TextureButton" to="." method="_on_texture_button_pressed"]

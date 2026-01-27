@@ -1,0 +1,278 @@
+[gd_scene load_steps=30 format=3 uid="uid://cobj1j5e12edx"]
+
+[ext_resource type="Script" path="res://scripts/level_2.gd" id="1_c68uq"]
+[ext_resource type="PackedScene" uid="uid://cram4t48cdgv4" path="res://scenes/player1.tscn" id="1_n4kde"]
+[ext_resource type="Texture2D" uid="uid://2om5xm048t4u" path="res://assets/background/3_-_Background_01.png" id="2_puiop"]
+[ext_resource type="Texture2D" uid="uid://c2qnh4hfobedv" path="res://assets/background/7_-_Background_05.png" id="3_1uwg4"]
+[ext_resource type="Texture2D" uid="uid://def3h3dx370qp" path="res://assets/background/6_-_Background_-_04.png" id="4_rha4w"]
+[ext_resource type="Texture2D" uid="uid://1hwd8yajlcms" path="res://assets/background/5_-_Background_03.png" id="5_xhlib"]
+[ext_resource type="Texture2D" uid="uid://cnexgk535cd6x" path="res://assets/background/4_-_Fog_-_Background_02.png" id="6_6nug3"]
+[ext_resource type="Texture2D" uid="uid://dv6c1eb71ajqe" path="res://assets/background/2_-_Foreground.png" id="7_n6hg5"]
+[ext_resource type="Texture2D" uid="uid://c5cmg3b5qxqcs" path="res://assets/background/1_-_Grass.png" id="8_cupl6"]
+[ext_resource type="PackedScene" uid="uid://bft57ay5ip28f" path="res://scenes/player2.tscn" id="9_83105"]
+[ext_resource type="PackedScene" uid="uid://b2la8hop1tx6d" path="res://scenes/gate.tscn" id="10_3vfs1"]
+[ext_resource type="PackedScene" uid="uid://cgyq8ytwabap2" path="res://scenes/upper_platform.tscn" id="13_fnupi"]
+[ext_resource type="Script" path="res://scripts/finish_line_1.gd" id="14_fh7tn"]
+[ext_resource type="PackedScene" uid="uid://6tagfpo37kvx" path="res://scenes/lower_spike.tscn" id="14_sctr5"]
+[ext_resource type="PackedScene" uid="uid://81uj7phato6j" path="res://scenes/lever2.tscn" id="14_ubn4d"]
+[ext_resource type="PackedScene" uid="uid://lpx4cjoa83cx" path="res://scenes/upper_spike.tscn" id="15_gujx2"]
+[ext_resource type="PackedScene" uid="uid://dd32hkhm7j2et" path="res://scenes/lever.tscn" id="16_leekm"]
+[ext_resource type="Texture2D" uid="uid://dyuhsrtjl0pfw" path="res://assets/Restart/5_-_restart.png" id="18_ulcbe"]
+[ext_resource type="Texture2D" uid="uid://db4sdmlbm0031" path="res://assets/Restart/5_-_restart_with_click.png" id="19_dvyrn"]
+[ext_resource type="Script" path="res://scripts/restart.gd" id="20_dtfev"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_jrptj"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_5seeo"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_h6de7"]
+
+[sub_resource type="Animation" id="Animation_yxykl"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-485, -127)]
+}
+
+[sub_resource type="Animation" id="Animation_5to24"]
+resource_name = "start"
+length = 3.0
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-693, -127), Vector2(370, -127)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_wblvs"]
+_data = {
+"RESET": SubResource("Animation_yxykl"),
+"start": SubResource("Animation_5to24")
+}
+
+[sub_resource type="Animation" id="Animation_hpxrf"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-157, 99)]
+}
+
+[sub_resource type="Animation" id="Animation_sge2a"]
+resource_name = "lowStart"
+length = 2.0
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-135, 99), Vector2(533, 99)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_cwlw3"]
+_data = {
+"RESET": SubResource("Animation_hpxrf"),
+"lowStart": SubResource("Animation_sge2a")
+}
+
+[node name="Level2" type="Node2D"]
+script = ExtResource("1_c68uq")
+
+[node name="player1" parent="." groups=["player", "weight"] instance=ExtResource("1_n4kde")]
+position = Vector2(-432, 172)
+collision_mask = 25
+
+[node name="Camera2D" type="Camera2D" parent="player1"]
+position = Vector2(-75, -72)
+zoom = Vector2(1.25, 1.25)
+limit_left = -935
+limit_top = -265
+limit_right = 830
+position_smoothing_speed = 100.0
+
+[node name="ParallaxBackground2" type="ParallaxBackground" parent="."]
+
+[node name="background n-2" type="ParallaxLayer" parent="ParallaxBackground2"]
+motion_scale = Vector2(2, 1)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground2/background n-2"]
+texture = ExtResource("2_puiop")
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="main bg" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/main bg"]
+texture = ExtResource("3_1uwg4")
+
+[node name="background n" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0.1, 1)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/background n"]
+position = Vector2(-5, -18)
+texture = ExtResource("4_rha4w")
+
+[node name="background n -1" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0.2, 1)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/background n -1"]
+position = Vector2(7, 16)
+texture = ExtResource("5_xhlib")
+
+[node name="fog" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0.3, 1)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/fog"]
+position = Vector2(2, 29)
+texture = ExtResource("6_6nug3")
+
+[node name="foreground" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(0, 24)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/foreground"]
+position = Vector2(12, 249)
+texture = ExtResource("7_n6hg5")
+
+[node name="grass" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(0, 66)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/grass"]
+position = Vector2(49, 99)
+texture = ExtResource("8_cupl6")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(0, 28)
+collision_mask = 7
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(8, 125)
+shape = SubResource("WorldBoundaryShape2D_jrptj")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="."]
+position = Vector2(-812, 32)
+rotation = -4.6876
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
+shape = SubResource("WorldBoundaryShape2D_5seeo")
+
+[node name="player2" parent="." groups=["player", "weight"] instance=ExtResource("9_83105")]
+position = Vector2(408, -82)
+collision_mask = 27
+
+[node name="Camera2D2" type="Camera2D" parent="player2"]
+position = Vector2(-77, -68)
+zoom = Vector2(1.25, 1.25)
+limit_left = -935
+limit_top = -265
+limit_right = 830
+position_smoothing_speed = 100.0
+
+[node name="right_boundary" parent="." instance=ExtResource("10_3vfs1")]
+position = Vector2(438, -55)
+collision_layer = 16
+
+[node name="lower_boundary" parent="." instance=ExtResource("10_3vfs1")]
+position = Vector2(417, -115)
+rotation = -1.57223
+collision_layer = 16
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_mask = 4
+script = ExtResource("14_fh7tn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(937, 43)
+rotation = -1.58212
+shape = SubResource("WorldBoundaryShape2D_h6de7")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+offset_left = 11.0
+offset_top = -7.0
+offset_right = 314.0
+offset_bottom = 143.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 38
+text = "Escaped: 0"
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureButton" type="TextureButton" parent="CanvasLayer"]
+offset_left = 1095.0
+offset_top = 15.0
+offset_right = 1135.0
+offset_bottom = 55.0
+texture_normal = ExtResource("18_ulcbe")
+texture_hover = ExtResource("19_dvyrn")
+script = ExtResource("20_dtfev")
+
+[node name="lower_spike" parent="." instance=ExtResource("14_sctr5")]
+position = Vector2(-74, 26)
+
+[node name="upper_spike" parent="." instance=ExtResource("15_gujx2")]
+position = Vector2(-86, -186)
+
+[node name="lever" parent="." instance=ExtResource("16_leekm")]
+position = Vector2(255, 20)
+
+[node name="upper_plat" parent="." instance=ExtResource("13_fnupi")]
+position = Vector2(-485, -127)
+collision_layer = 8
+
+[node name="upper_plat_anim" type="AnimationPlayer" parent="upper_plat"]
+libraries = {
+"": SubResource("AnimationLibrary_wblvs")
+}
+
+[node name="lower_plat" parent="." instance=ExtResource("13_fnupi")]
+position = Vector2(-157, 99)
+
+[node name="lower_plat_anim" type="AnimationPlayer" parent="lower_plat"]
+libraries = {
+"": SubResource("AnimationLibrary_cwlw3")
+}
+
+[node name="lever2" parent="." instance=ExtResource("14_ubn4d")]
+position = Vector2(490, 246)
+
+[node name="pressF" type="Node" parent="."]
+
+[node name="Label" type="Label" parent="pressF"]
+z_index = -3
+offset_left = 42.0
+offset_top = -219.0
+offset_right = 251.0
+offset_bottom = -185.0
+theme_override_colors/font_color = Color(0.404511, 0.404511, 0.404511, 1)
+theme_override_font_sizes/font_size = 24
+text = "Press F to interect"
+
+[connection signal="pressed" from="CanvasLayer/TextureButton" to="." method="_on_texture_button_pressed"]

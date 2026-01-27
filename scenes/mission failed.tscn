@@ -1,0 +1,38 @@
+[gd_scene load_steps=6 format=3 uid="uid://djiqt77w3aeh7"]
+
+[ext_resource type="Script" path="res://scripts/mission_failed.gd" id="1_2yrex"]
+[ext_resource type="Texture2D" uid="uid://dh5lsy3od422q" path="res://assets/main menu/background.png" id="1_mjftj"]
+[ext_resource type="Texture2D" uid="uid://bomokp52jwjjq" path="res://assets/Control/3_-_back_button.png" id="2_j3olf"]
+[ext_resource type="Texture2D" uid="uid://b2d57wk4d2wsr" path="res://assets/Control/3_-_back_button_with_click.png" id="3_mvgh5"]
+[ext_resource type="Texture2D" uid="uid://bgh3xktihoxfx" path="res://assets/mission complete/failed.png" id="4_q8y7w"]
+
+[node name="MissionFailed" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_2yrex")
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(565.131, 416.5)
+scale = Vector2(0.606496, 0.606496)
+texture = ExtResource("1_mjftj")
+
+[node name="back" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 22.0001
+offset_top = 22.0
+offset_right = 62.0001
+offset_bottom = 63.0
+texture_normal = ExtResource("2_j3olf")
+texture_hover = ExtResource("3_mvgh5")
+metadata/_edit_use_anchors_ = true
+
+[node name="Failed" type="Sprite2D" parent="."]
+position = Vector2(597, 270)
+scale = Vector2(0.691489, 0.691489)
+texture = ExtResource("4_q8y7w")
+
+[connection signal="pressed" from="back" to="." method="_on_back_pressed"]

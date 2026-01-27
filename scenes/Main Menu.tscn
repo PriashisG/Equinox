@@ -1,0 +1,60 @@
+[gd_scene load_steps=10 format=3 uid="uid://yh4n15tv3kmp"]
+
+[ext_resource type="Script" path="res://scenes/main_menu.gd" id="1_hdf2d"]
+[ext_resource type="Texture2D" uid="uid://dh5lsy3od422q" path="res://assets/main menu/background.png" id="2_rtlwb"]
+[ext_resource type="Texture2D" uid="uid://dmmvw4pleofrb" path="res://assets/main menu/1_-_start_button_click.png" id="2_txit5"]
+[ext_resource type="Texture2D" uid="uid://cm1o2f6ssa7n8" path="res://assets/main menu/1_-_start_button_not_click.png" id="3_g64u3"]
+[ext_resource type="Texture2D" uid="uid://7gh6236civas" path="res://assets/main menu/2_-_control_button_not_click.png" id="4_cgp0n"]
+[ext_resource type="Texture2D" uid="uid://dbcfflexcr6du" path="res://assets/main menu/2_-_control_button_click.png" id="5_527gu"]
+[ext_resource type="Texture2D" uid="uid://cd7ycg70n86go" path="res://assets/main menu/3_-_exit_button_not_click.png" id="6_ocpmd"]
+[ext_resource type="Texture2D" uid="uid://bd0gvq2sdtfeu" path="res://assets/main menu/3_-_exit_button_click.png" id="7_dcsyv"]
+[ext_resource type="Texture2D" uid="uid://cjfxd16u7vii3" path="res://assets/main menu/0 - name.png" id="9_hn3co"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_hdf2d")
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(565.131, 416.5)
+scale = Vector2(0.606496, 0.606496)
+texture = ExtResource("2_rtlwb")
+
+[node name="Start game" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 418.0
+offset_top = 234.0
+offset_right = 724.0
+offset_bottom = 324.0
+texture_normal = ExtResource("3_g64u3")
+texture_hover = ExtResource("2_txit5")
+
+[node name="Controls" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 415.0
+offset_top = 332.0
+offset_right = 721.0
+offset_bottom = 422.0
+texture_normal = ExtResource("4_cgp0n")
+texture_hover = ExtResource("5_527gu")
+
+[node name="Exit" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 413.0
+offset_top = 432.0
+offset_right = 719.0
+offset_bottom = 522.0
+texture_normal = ExtResource("6_ocpmd")
+texture_hover = ExtResource("7_dcsyv")
+
+[node name="0-Name" type="Sprite2D" parent="."]
+position = Vector2(569, 120)
+texture = ExtResource("9_hn3co")
+
+[connection signal="pressed" from="Start game" to="." method="_on_start_game_pressed"]
+[connection signal="pressed" from="Controls" to="." method="_on_controls_pressed"]
+[connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]

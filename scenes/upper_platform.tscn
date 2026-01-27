@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://cgyq8ytwabap2"]
+
+[ext_resource type="Texture2D" uid="uid://botwxo5ps2wsl" path="res://assets/sprites/9_-_Gate.png" id="1_bhr5i"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p7i6w"]
+size = Vector2(154, 32)
+
+[node name="upper_plat" type="AnimatableBody2D"]
+
+[node name="9-Gate" type="Sprite2D" parent="."]
+position = Vector2(-211, -5.00001)
+rotation = 1.5708
+scale = Vector2(0.761905, 0.402597)
+texture = ExtResource("1_bhr5i")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-211, -5)
+shape = SubResource("RectangleShape2D_p7i6w")

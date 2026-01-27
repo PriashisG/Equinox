@@ -1,0 +1,32 @@
+[gd_scene load_steps=4 format=3 uid="uid://djg1ohxo3561b"]
+
+[ext_resource type="Texture2D" uid="uid://botwxo5ps2wsl" path="res://assets/sprites/9_-_Gate.png" id="1_n7pmp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_624d0"]
+size = Vector2(163, 32.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g54wm"]
+size = Vector2(141, 7.5)
+
+[node name="pressure_plate" type="StaticBody2D"]
+position = Vector2(-212, 166)
+collision_layer = 2
+collision_mask = 6
+
+[node name="plate" type="Sprite2D" parent="."]
+position = Vector2(-90.75, -29.1875)
+scale = Vector2(3.89286, 0.0840909)
+texture = ExtResource("1_n7pmp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-91, -28.75)
+shape = SubResource("RectangleShape2D_624d0")
+
+[node name="pressureArea2d" type="Area2D" parent="."]
+position = Vector2(-1, -10)
+collision_layer = 2
+collision_mask = 6
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="pressureArea2d"]
+position = Vector2(-92.5, -40)
+shape = SubResource("RectangleShape2D_g54wm")
