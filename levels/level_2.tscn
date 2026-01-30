@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=3 uid="uid://cobj1j5e12edx"]
+[gd_scene load_steps=31 format=3 uid="uid://cobj1j5e12edx"]
 
 [ext_resource type="Script" path="res://scripts/level_2.gd" id="1_c68uq"]
 [ext_resource type="PackedScene" uid="uid://cram4t48cdgv4" path="res://scenes/player1.tscn" id="1_n4kde"]
@@ -20,6 +20,7 @@
 [ext_resource type="Texture2D" uid="uid://dyuhsrtjl0pfw" path="res://assets/Restart/5_-_restart.png" id="18_ulcbe"]
 [ext_resource type="Texture2D" uid="uid://db4sdmlbm0031" path="res://assets/Restart/5_-_restart_with_click.png" id="19_dvyrn"]
 [ext_resource type="Script" path="res://scripts/restart.gd" id="20_dtfev"]
+[ext_resource type="AudioStream" uid="uid://bkwi7f7k1jki0" path="res://assets/audio/bgm.mp3" id="21_gfy8o"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_jrptj"]
 
@@ -274,5 +275,22 @@ offset_bottom = -185.0
 theme_override_colors/font_color = Color(0.404511, 0.404511, 0.404511, 1)
 theme_override_font_sizes/font_size = 24
 text = "Press F to interect"
+
+[node name="pressF" type="Node" parent="pressF"]
+
+[node name="Label" type="Label" parent="pressF/pressF"]
+z_index = -3
+offset_left = -557.0
+offset_top = -64.0
+offset_right = -348.0
+offset_bottom = -30.0
+theme_override_colors/font_color = Color(0.404511, 0.404511, 0.404511, 1)
+theme_override_font_sizes/font_size = 24
+text = "Press S to switch player"
+
+[node name="Audio_BGM" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("21_gfy8o")
+volume_db = 0.8
+bus = &"BGM"
 
 [connection signal="pressed" from="CanvasLayer/TextureButton" to="." method="_on_texture_button_pressed"]

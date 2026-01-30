@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=3 uid="uid://c2bqhemljwggg"]
+[gd_scene load_steps=31 format=3 uid="uid://c2bqhemljwggg"]
 
 [ext_resource type="PackedScene" uid="uid://cram4t48cdgv4" path="res://scenes/player1.tscn" id="1_5skjb"]
 [ext_resource type="Script" path="res://levels/game.gd" id="1_nsmrk"]
@@ -18,6 +18,7 @@
 [ext_resource type="Texture2D" uid="uid://dyuhsrtjl0pfw" path="res://assets/Restart/5_-_restart.png" id="16_gk6kg"]
 [ext_resource type="Texture2D" uid="uid://db4sdmlbm0031" path="res://assets/Restart/5_-_restart_with_click.png" id="17_sgjqv"]
 [ext_resource type="Script" path="res://scripts/restart.gd" id="18_k22yt"]
+[ext_resource type="AudioStream" uid="uid://bkwi7f7k1jki0" path="res://assets/audio/bgm.mp3" id="19_1vfya"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_nh0df"]
 
@@ -288,5 +289,10 @@ offset_bottom = -50.0
 theme_override_colors/font_color = Color(0.404511, 0.404511, 0.404511, 1)
 theme_override_font_sizes/font_size = 24
 text = "Can a shadow touch, or only haunt?"
+
+[node name="Audio_BGM" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("19_1vfya")
+volume_db = 0.8
+bus = &"BGM"
 
 [connection signal="pressed" from="CanvasLayer/TextureButton" to="." method="_on_texture_button_pressed"]

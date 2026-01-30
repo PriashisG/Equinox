@@ -7,6 +7,7 @@ var active_player
 @onready var shadow_player: CharacterBody2D
 @onready var camera_2d: Camera2D = $player1/Camera2D
 @onready var camera_2d_2: Camera2D = $player2/Camera2D2
+@onready var audio_bgm: AudioStreamPlayer2D = $Audio_BGM
 
 var escaped=0
 
@@ -32,6 +33,9 @@ func _ready() -> void:
 	active_player = shadow_player # or your camera name
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
+	if(!audio_bgm.playing):
+		audio_bgm.play()
+		
 	if(escaped==2):
 		Global.level+=1
 		if(escaped == 2 ): get_tree().change_scene_to_file("res://scenes/mission complete.tscn")
