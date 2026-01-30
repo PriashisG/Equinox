@@ -7,7 +7,7 @@ var active_player
 @onready var shadow_player: CharacterBody2D
 @onready var camera_2d: Camera2D = $player1/Camera2D
 @onready var camera_2d_2: Camera2D = $player2/Camera2D2
-
+var pp=2
 var escaped=0
 
 

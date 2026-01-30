@@ -18,7 +18,7 @@ func _on_body_exited(body: Node2D) -> void:
 		inside = false
 	
 func _process(delta: float) -> void:
-	if(inside and not ok and Input.is_action_just_pressed("lever")):
+	if((get_parent().active_player in get_overlapping_bodies()) and not ok and Input.is_action_just_pressed("lever")):
 		sprite.play("active")
 		upper_plat_anim.play("start")
 		ok=true

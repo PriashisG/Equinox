@@ -1,0 +1,125 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1769788853
+export_presets.cfg::TextFile::-1::1769788018::0::1::::<><>::
+icon.svg::CompressedTexture2D::6146254398447775616::1769788018::1769788855::1::::<><>::
+::res://assets/::1769788017
+logo.png::CompressedTexture2D::3921624641449803453::1769788017::1769788855::1::::<><>::
+Sprite Credit.txt::TextFile::-1::1769788017::0::1::::<><>::
+::res://assets/audio/::1769788017
+bgm.mp3::AudioStreamMP3::6643201350217325167::1769788017::1769788854::1::::<><>::
+::res://assets/background/::1769788017
+1_-_Grass.png::CompressedTexture2D::6883376224295895246::1769788017::1769788858::1::::<><>::
+2_-_Foreground.png::CompressedTexture2D::8697391555607790760::1769788017::1769788857::1::::<><>::
+3_-_Background_01.png::CompressedTexture2D::1924783472264721330::1769788017::1769788858::1::::<><>::
+4_-_Fog_-_Background_02.png::CompressedTexture2D::5694961624183919281::1769788017::1769788858::1::::<><>::
+5_-_Background_03.png::CompressedTexture2D::1840703480448160154::1769788017::1769788857::1::::<><>::
+6_-_Background_-_04.png::CompressedTexture2D::7452053367128463475::1769788017::1769788857::1::::<><>::
+7_-_Background_05.png::CompressedTexture2D::6701773545378046163::1769788017::1769788857::1::::<><>::
+::res://assets/Control/::1769788017
+1_-_Background.png::CompressedTexture2D::7689809466571224577::1769788017::1769788858::1::::<><>::
+2_-_info.png::CompressedTexture2D::1585501688482135221::1769788017::1769788857::1::::<><>::
+3_-_back_button.png::CompressedTexture2D::3394705758946094726::1769788017::1769788857::1::::<><>::
+3_-_back_button_with_click.png::CompressedTexture2D::4289592422654576245::1769788017::1769788857::1::::<><>::
+::res://assets/Level choice/::1769788017
+0_-_level_word.png::CompressedTexture2D::8673442433406566711::1769788017::1769788857::1::::<><>::
+1_-_level_1.png::CompressedTexture2D::4054183369814127746::1769788017::1769788857::1::::<><>::
+1_-_level_1_with_click.png::CompressedTexture2D::8997980413530869605::1769788017::1769788857::1::::<><>::
+2_-_level_2.png::CompressedTexture2D::3072934068876889463::1769788017::1769788857::1::::<><>::
+2_-_level_2_with_click.png::CompressedTexture2D::5321317690076738387::1769788017::1769788857::1::::<><>::
+3_-_level_3.png::CompressedTexture2D::7152360520114577406::1769788017::1769788857::1::::<><>::
+3_-_level_3_with_click.png::CompressedTexture2D::4696914454446171779::1769788017::1769788858::1::::<><>::
+4_-_lock.png::CompressedTexture2D::2583479448182596425::1769788017::1769788858::1::::<><>::
+::res://assets/main menu/::1769788017
+0 - name.png::CompressedTexture2D::5416266111562482612::1769788017::1769788858::1::::<><>::
+1_-_start_button_click.png::CompressedTexture2D::8027616598953324583::1769788017::1769788858::1::::<><>::
+1_-_start_button_not_click.png::CompressedTexture2D::5669679878329924347::1769788017::1769788858::1::::<><>::
+2_-_control_button_click.png::CompressedTexture2D::7233892749143272702::1769788017::1769788858::1::::<><>::
+2_-_control_button_not_click.png::CompressedTexture2D::2258911104298299046::1769788017::1769788858::1::::<><>::
+3_-_exit_button_click.png::CompressedTexture2D::2648999344993215096::1769788017::1769788858::1::::<><>::
+3_-_exit_button_not_click.png::CompressedTexture2D::5050929131572850254::1769788017::1769788858::1::::<><>::
+4_-_icon_click.png::CompressedTexture2D::1329864953540905358::1769788017::1769788858::1::::<><>::
+4_-_icon_without_click.png::CompressedTexture2D::523920972358010150::1769788017::1769788858::1::::<><>::
+background.png::CompressedTexture2D::7713216624834246378::1769788017::1769788858::1::::<><>::
+::res://assets/mission complete/::1769788017
+1_-_complete_name.png::CompressedTexture2D::944716971177965851::1769788017::1769788858::1::::<><>::
+failed.png::CompressedTexture2D::2823746093815187517::1769788017::1769788858::1::::<><>::
+::res://assets/Restart/::1769788017
+0_-_level_word.png::CompressedTexture2D::7683562271588872031::1769788017::1769788858::1::::<><>::
+2_-_level_2.png::CompressedTexture2D::2066841444339722561::1769788017::1769788858::1::::<><>::
+2_-_Restart_button.png::CompressedTexture2D::5537330654473962448::1769788017::1769788858::1::::<><>::
+2_-_Restart_button_with_click.png::CompressedTexture2D::7615841198149833711::1769788017::1769788855::1::::<><>::
+3_-_level_3.png::CompressedTexture2D::377443196567176715::1769788017::1769788855::1::::<><>::
+3_-_level_3_with_click.png::CompressedTexture2D::5560688238232125452::1769788017::1769788855::1::::<><>::
+3_-_menu_button.png::CompressedTexture2D::850781247338623238::1769788017::1769788855::1::::<><>::
+3_-_menu_button_with_click.png::CompressedTexture2D::2990862703668397112::1769788017::1769788855::1::::<><>::
+4_-_video-pause-button.png::CompressedTexture2D::7155144195766838465::1769788017::1769788855::1::::<><>::
+4_-_video-pause-button_with_click.png::CompressedTexture2D::47223831008635905::1769788017::1769788855::1::::<><>::
+5_-_restart.png::CompressedTexture2D::8885539939385784276::1769788017::1769788855::1::::<><>::
+5_-_restart_with_click.png::CompressedTexture2D::7290416760172114334::1769788017::1769788855::1::::<><>::
+::res://assets/sprites/::1769788018
+1_-_Idle_sheet.png::CompressedTexture2D::537925621492385190::1769788017::1769788858::1::::<><>::
+2_-_Run-sheet.png::CompressedTexture2D::8792270618731575853::1769788017::1769788857::1::::<><>::
+3_-_Die-sheet.png::CompressedTexture2D::7189667940300247009::1769788017::1769788858::1::::<><>::
+4_-_Fall_down-sheet.png::CompressedTexture2D::3592819420020316894::1769788017::1769788856::1::::<><>::
+5_-_Jump_start-sheet.png::CompressedTexture2D::1577849794988508923::1769788017::1769788856::1::::<><>::
+9_-_Gate.png::CompressedTexture2D::3409665301431072159::1769788017::1769788855::1::::<><>::
+Die-sheet2.png::CompressedTexture2D::2671288119596213370::1769788017::1769788858::1::::<><>::
+Die-sheet.png::CompressedTexture2D::4065594844897322519::1769788017::1769788857::1::::<><>::
+fall.png::CompressedTexture2D::5898545458977777507::1769788018::1769788857::1::::<><>::
+Fall_down-shhet2.png::CompressedTexture2D::5198886654552535814::1769788018::1769788857::1::::<><>::
+Idle_sheet2.png::CompressedTexture2D::4765454041877514730::1769788018::1769788858::1::::<><>::
+idle_sheet.png::CompressedTexture2D::2648240675969396049::1769788018::1769788859::1::::<><>::
+idle_sheet_b.png::CompressedTexture2D::3422091498773670701::1769788018::1769788858::1::::<><>::
+Jump_start-sheet2.png::CompressedTexture2D::2010692335798628943::1769788018::1769788856::1::::<><>::
+jump_start-sheet.png::CompressedTexture2D::6492497771943626739::1769788018::1769788856::1::::<><>::
+lever.png::CompressedTexture2D::6616736777192932239::1769788018::1769788855::1::::<><>::
+Run2.png::CompressedTexture2D::1293113145414856880::1769788018::1769788857::1::::<><>::
+run-sheet.png::CompressedTexture2D::4421078381453583796::1769788018::1769788857::1::::<><>::
+run.png::CompressedTexture2D::7582294648578511299::1769788018::1769788857::1::::<><>::
+spike.png::CompressedTexture2D::4626285077178882496::1769788018::1769788855::1::::<><>::
+story.png::CompressedTexture2D::8274757833673388190::1769788018::1769788855::1::::<><>::
+::res://assets/Story/::1769788017
+1-_next_button.png::CompressedTexture2D::2992582377975555656::1769788017::1769788855::1::::<><>::
+1-_next_button_with_click.png::CompressedTexture2D::2975952873655315807::1769788017::1769788855::1::::<><>::
+::res://build/::1769788018
+::res://levels/::1769788018
+game.gd::GDScript::-1::1769788018::0::1::::<>Node2D<>::
+level_1.tscn::PackedScene::6670988724952476042::1769788018::0::1::::<><>::uid://cram4t48cdgv4::::res://scenes/player1.tscn<>res://levels/game.gd<>uid://c2qnh4hfobedv::::res://assets/background/7_-_Background_05.png<>uid://def3h3dx370qp::::res://assets/background/6_-_Background_-_04.png<>uid://1hwd8yajlcms::::res://assets/background/5_-_Background_03.png<>uid://cnexgk535cd6x::::res://assets/background/4_-_Fog_-_Background_02.png<>uid://2om5xm048t4u::::res://assets/background/3_-_Background_01.png<>uid://dv6c1eb71ajqe::::res://assets/background/2_-_Foreground.png<>uid://c5cmg3b5qxqcs::::res://assets/background/1_-_Grass.png<>uid://bft57ay5ip28f::::res://scenes/player2.tscn<>uid://b2la8hop1tx6d::::res://scenes/gate.tscn<>uid://c5via1dabb808::::res://scenes/box.tscn<>uid://djg1ohxo3561b::::res://scenes/pressure_plate.tscn<>res://scripts/pressure_plate.gd<>res://scripts/finish_line_1.gd<>uid://dyuhsrtjl0pfw::::res://assets/Restart/5_-_restart.png<>uid://db4sdmlbm0031::::res://assets/Restart/5_-_restart_with_click.png<>res://scripts/restart.gd
+level_2.tscn::PackedScene::5758142958920976901::1769788018::0::1::::<><>::res://scripts/level_2.gd<>uid://cram4t48cdgv4::::res://scenes/player1.tscn<>uid://2om5xm048t4u::::res://assets/background/3_-_Background_01.png<>uid://c2qnh4hfobedv::::res://assets/background/7_-_Background_05.png<>uid://def3h3dx370qp::::res://assets/background/6_-_Background_-_04.png<>uid://1hwd8yajlcms::::res://assets/background/5_-_Background_03.png<>uid://cnexgk535cd6x::::res://assets/background/4_-_Fog_-_Background_02.png<>uid://dv6c1eb71ajqe::::res://assets/background/2_-_Foreground.png<>uid://c5cmg3b5qxqcs::::res://assets/background/1_-_Grass.png<>uid://bft57ay5ip28f::::res://scenes/player2.tscn<>uid://b2la8hop1tx6d::::res://scenes/gate.tscn<>uid://cgyq8ytwabap2::::res://scenes/upper_platform.tscn<>res://scripts/finish_line_1.gd<>uid://6tagfpo37kvx::::res://scenes/lower_spike.tscn<>uid://81uj7phato6j::::res://scenes/lever2.tscn<>uid://lpx4cjoa83cx::::res://scenes/upper_spike.tscn<>uid://dd32hkhm7j2et::::res://scenes/lever.tscn<>uid://dyuhsrtjl0pfw::::res://assets/Restart/5_-_restart.png<>uid://db4sdmlbm0031::::res://assets/Restart/5_-_restart_with_click.png<>res://scripts/restart.gd
+::res://scenes/::1769788019
+box.tscn::PackedScene::6922345715547492303::1769788018::0::1::::<><>::uid://botwxo5ps2wsl::::res://assets/sprites/9_-_Gate.png
+coming_soon.tscn::PackedScene::6140391095269439100::1769788018::0::1::::<><>::uid://dh5lsy3od422q::::res://assets/main menu/background.png<>res://scripts/coming_soon.gd<>uid://bomokp52jwjjq::::res://assets/Control/3_-_back_button.png<>uid://b2d57wk4d2wsr::::res://assets/Control/3_-_back_button_with_click.png
+controls.gd::GDScript::-1::1769788018::0::1::::<>Control<>::
+Controls.tscn::PackedScene::8390968130640238733::1769788018::0::1::::<><>::uid://dh5lsy3od422q::::res://assets/main menu/background.png<>res://scenes/controls.gd<>uid://wua8mhxt3xx2::::res://assets/Control/2_-_info.png<>uid://bomokp52jwjjq::::res://assets/Control/3_-_back_button.png<>uid://b2d57wk4d2wsr::::res://assets/Control/3_-_back_button_with_click.png
+game_manager.gd::GDScript::-1::1769788018::0::1::::<>Node<>::
+gate.tscn::PackedScene::4304286938421257877::1769788018::0::1::::<><>::uid://botwxo5ps2wsl::::res://assets/sprites/9_-_Gate.png
+Level choice.tscn::PackedScene::6873854925750924614::1769788018::0::1::::<><>::res://scenes/level_choice.gd<>uid://dh5lsy3od422q::::res://assets/main menu/background.png<>uid://bomokp52jwjjq::::res://assets/Control/3_-_back_button.png<>uid://dvtqlhdpdvanf::::res://assets/Level choice/0_-_level_word.png<>uid://b2d57wk4d2wsr::::res://assets/Control/3_-_back_button_with_click.png<>uid://bx042p142gonq::::res://assets/Level choice/1_-_level_1.png<>uid://d1gxom0k1qy0t::::res://assets/Level choice/1_-_level_1_with_click.png<>uid://bj1s1mcvaq576::::res://assets/Level choice/2_-_level_2.png<>uid://ch2xlbt6lhfjf::::res://assets/Level choice/2_-_level_2_with_click.png<>uid://c85wlkydynaqw::::res://assets/Level choice/3_-_level_3.png<>uid://bc2pr8ugt73kv::::res://assets/Level choice/4_-_lock.png<>uid://b76hq3bcod2t0::::res://assets/Level choice/3_-_level_3_with_click.png
+level_choice.gd::GDScript::-1::1769788018::0::1::::<>Control<>::
+lever2.tscn::PackedScene::2371137777899179031::1769788018::0::1::::<><>::res://scripts/lever_2.gd<>uid://c1jgxnljhg0mt::::res://assets/sprites/lever.png
+lever.tscn::PackedScene::7429283555104608143::1769788018::0::1::::<><>::uid://c1jgxnljhg0mt::::res://assets/sprites/lever.png<>res://scripts/lever.gd
+lower_spike.tscn::PackedScene::2215088331333169353::1769788018::0::1::::<><>::res://scripts/lower_spike.gd<>uid://b66aiev62uxdo::::res://assets/sprites/spike.png
+Main Menu.tscn::PackedScene::1700768312545871583::1769788018::0::1::::<><>::res://scenes/main_menu.gd<>uid://dh5lsy3od422q::::res://assets/main menu/background.png<>uid://dmmvw4pleofrb::::res://assets/main menu/1_-_start_button_click.png<>uid://cm1o2f6ssa7n8::::res://assets/main menu/1_-_start_button_not_click.png<>uid://7gh6236civas::::res://assets/main menu/2_-_control_button_not_click.png<>uid://dbcfflexcr6du::::res://assets/main menu/2_-_control_button_click.png<>uid://cd7ycg70n86go::::res://assets/main menu/3_-_exit_button_not_click.png<>uid://bd0gvq2sdtfeu::::res://assets/main menu/3_-_exit_button_click.png<>uid://cjfxd16u7vii3::::res://assets/main menu/0 - name.png
+main_menu.gd::GDScript::-1::1769788018::0::1::::<>Control<>::
+mission complete.tscn::PackedScene::5202286812350981452::1769788019::0::1::::<><>::uid://dh5lsy3od422q::::res://assets/main menu/background.png<>uid://npvl6fw8bd1d::::res://assets/mission complete/1_-_complete_name.png<>uid://bivvnodexhljc::::res://assets/Story/1-_next_button.png<>uid://bintrkpgnrkgt::::res://assets/Story/1-_next_button_with_click.png
+mission failed.tscn::PackedScene::7808483799040476830::1769788019::0::1::::<><>::res://scripts/mission_failed.gd<>uid://dh5lsy3od422q::::res://assets/main menu/background.png<>uid://bomokp52jwjjq::::res://assets/Control/3_-_back_button.png<>uid://b2d57wk4d2wsr::::res://assets/Control/3_-_back_button_with_click.png<>uid://bgh3xktihoxfx::::res://assets/mission complete/failed.png
+player1.tscn::PackedScene::5966833145414340247::1769788019::0::1::::<><>::res://scripts/playerMovement.gd<>uid://bx6n0uua2wafn::::res://assets/sprites/Die-sheet.png<>uid://cqbkggkhxy2g2::::res://assets/sprites/fall.png<>uid://bo0xl2e6i484h::::res://assets/sprites/idle_sheet_b.png<>uid://cyraqweww65gx::::res://assets/sprites/jump_start-sheet.png<>uid://dga6jxst7n02b::::res://assets/sprites/run.png
+player2.tscn::PackedScene::2778466772848030603::1769788019::0::1::::<><>::res://scripts/playerMovement.gd<>uid://daoy1sk4hv1u0::::res://assets/sprites/3_-_Die-sheet.png<>uid://brgnhf3nxiufu::::res://assets/sprites/4_-_Fall_down-sheet.png<>uid://hwts6grofdso::::res://assets/sprites/1_-_Idle_sheet.png<>uid://wqk7qw1kf8hb::::res://assets/sprites/5_-_Jump_start-sheet.png<>uid://dxjboa43jag3n::::res://assets/sprites/2_-_Run-sheet.png
+pressure_plate.tscn::PackedScene::7804951957141231649::1769788019::0::1::::<><>::uid://botwxo5ps2wsl::::res://assets/sprites/9_-_Gate.png
+restart.gd::GDScript::-1::1769788019::0::1::::<>Control<>::
+Restart.tscn::PackedScene::6949384371722968973::1769788018::0::1::::<><>::res://scenes/restart.gd<>uid://dh5lsy3od422q::::res://assets/main menu/background.png<>uid://ck5la6b50cdbc::::res://assets/Restart/2_-_Restart_button.png<>uid://dgrf16mxitawl::::res://assets/Restart/2_-_Restart_button_with_click.png<>uid://meeiiyx2mn0q::::res://assets/Restart/3_-_menu_button.png<>uid://biu2co7oaphgy::::res://assets/Restart/3_-_menu_button_with_click.png
+stroy.gd::GDScript::-1::1769788019::0::1::::<>Control<>::
+Stroy.tscn::PackedScene::3010024813431052859::1769788018::0::1::::<><>::res://scenes/stroy.gd<>uid://dh5lsy3od422q::::res://assets/main menu/background.png<>uid://bomokp52jwjjq::::res://assets/Control/3_-_back_button.png<>uid://b2d57wk4d2wsr::::res://assets/Control/3_-_back_button_with_click.png<>uid://bivvnodexhljc::::res://assets/Story/1-_next_button.png<>uid://bintrkpgnrkgt::::res://assets/Story/1-_next_button_with_click.png<>uid://dp5mb107ke5qg::::res://assets/sprites/story.png
+upper_platform.tscn::PackedScene::5244551189306262561::1769788019::0::1::::<><>::uid://botwxo5ps2wsl::::res://assets/sprites/9_-_Gate.png
+upper_spike.tscn::PackedScene::804491344773488979::1769788019::0::1::::<><>::res://scripts/lower_spike.gd<>uid://b66aiev62uxdo::::res://assets/sprites/spike.png
+::res://scripts/::1769788019
+coming_soon.gd::GDScript::-1::1769788019::0::1::::<>Control<>::
+finish_line_1.gd::GDScript::-1::1769788019::0::1::::<>Area2D<>::
+Global.gd::GDScript::-1::1769788019::0::1::::<>Node<>::
+level_2.gd::GDScript::-1::1769788019::0::1::::<>Node2D<>::
+lever.gd::GDScript::-1::1769788019::0::1::::<>Area2D<>::
+lever_2.gd::GDScript::-1::1769788019::0::1::::<>Area2D<>::
+lower_spike.gd::GDScript::-1::1769788019::0::1::::<>Area2D<>::
+mission_failed.gd::GDScript::-1::1769788019::0::1::::<>Control<>::
+playerMovement.gd::GDScript::-1::1769788019::0::1::::<>CharacterBody2D<>::
+pressure_plate.gd::GDScript::-1::1769788019::0::1::::<>StaticBody2D<>::
+restart.gd::GDScript::-1::1769788019::0::1::::<>TextureButton<>::
