@@ -4,3 +4,8 @@ res://levels/level_1.tscn
 res://levels/game.gd
 res://levels/level_2.tscn
 res://scripts/level_2.gd
+res://scenes/player1.tscn
+res://scripts/playerMovement.gd
+res://scenes/player2.tscn
+res://scripts/pressure_plate.gd
+res://scenes/gate.tscn

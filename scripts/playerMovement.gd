@@ -5,7 +5,14 @@ const JUMP_VELOCITY = -450.0
 @onready var sprite: AnimatedSprite2D = $AnimatedSprite2D
 @onready var shadow_camera: Camera2D = $"../player1/Camera2D"
 @onready var light_camera: Camera2D = $"../player2/Camera2D2"
+@onready var audio_running: AudioStreamPlayer2D = $Audio_running
+@onready var audio_jumping: AudioStreamPlayer2D = $Audio_jumping
+@onready var audio_gate: AudioStreamPlayer2D = $"../Audio_gate"
+
 var push_force = 1500
+
+
+
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
 	var norachora = (self==get_parent().active_player)
@@ -22,8 +29,11 @@ func _physics_process(delta: float) -> void:
 	if norachora:
 		if direction:
 			velocity.x = direction * SPEED
+			if(!audio_running.playing and is_on_floor()):
+				audio_running.play()
 		else:
 			velocity.x = move_toward(velocity.x, 0, SPEED)
+			audio_running.stop()
 	else:
 		velocity.x=0
 	update_animation(direction,velocity,norachora);
@@ -42,7 +52,10 @@ func update_animation(direction,velocity,norachora):
 			if velocity.y < 0:
 				sprite.flip_h = direction < 0
 				sprite.play("jump")
+				if(!audio_jumping.playing):
+					audio_jumping.play()
 			else:
+				audio_jumping.stop()
 				sprite.flip_h = direction < 0
 				sprite.play("fall")
 		elif direction != 0:

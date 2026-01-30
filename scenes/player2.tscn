@@ -1,4 +1,4 @@
-[gd_scene load_steps=66 format=3 uid="uid://bft57ay5ip28f"]
+[gd_scene load_steps=68 format=3 uid="uid://bft57ay5ip28f"]
 
 [ext_resource type="Script" path="res://scripts/playerMovement.gd" id="1_ucshn"]
 [ext_resource type="Texture2D" uid="uid://daoy1sk4hv1u0" path="res://assets/sprites/3_-_Die-sheet.png" id="2_o2c84"]
@@ -6,6 +6,8 @@
 [ext_resource type="Texture2D" uid="uid://hwts6grofdso" path="res://assets/sprites/1_-_Idle_sheet.png" id="4_gqvnt"]
 [ext_resource type="Texture2D" uid="uid://wqk7qw1kf8hb" path="res://assets/sprites/5_-_Jump_start-sheet.png" id="5_btd07"]
 [ext_resource type="Texture2D" uid="uid://dxjboa43jag3n" path="res://assets/sprites/2_-_Run-sheet.png" id="6_d0o6g"]
+[ext_resource type="AudioStream" uid="uid://dqgvhykl0bdeh" path="res://assets/audio/running.mp3" id="7_0kyep"]
+[ext_resource type="AudioStream" uid="uid://cw6e5pxbiqnuw" path="res://assets/audio/jumping.mp3" id="8_3tgt0"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_6d8ho"]
 atlas = ExtResource("2_o2c84")
@@ -453,3 +455,11 @@ autoplay = "idle"
 [node name="boxmatha" type="CollisionShape2D" parent="."]
 position = Vector2(-78, -71.75)
 shape = SubResource("RectangleShape2D_x52cf")
+
+[node name="Audio_running" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("7_0kyep")
+bus = &"SFX"
+
+[node name="Audio_jumping" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("8_3tgt0")
+bus = &"SFX"
