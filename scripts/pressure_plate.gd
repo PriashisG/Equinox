@@ -21,7 +21,6 @@ func _on_body_entered(body):
 func _on_body_exited(body):
 	if body.is_in_group("weight"):
 		bodies_on_plate -= 1
-		audio_gate.stop();
 		if bodies_on_plate <= 0:
 			anim.play("up")
 			gate_animation.play("close")

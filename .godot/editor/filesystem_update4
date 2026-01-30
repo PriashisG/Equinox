@@ -9,3 +9,5 @@ res://scripts/playerMovement.gd
 res://scenes/player2.tscn
 res://scripts/pressure_plate.gd
 res://scenes/gate.tscn
+res://scripts/lever.gd
+res://scripts/lever_2.gd
