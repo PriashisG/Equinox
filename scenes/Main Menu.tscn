@@ -65,6 +65,9 @@ bus = &"SFX"
 stream = ExtResource("11_3sh8h")
 bus = &"SFX"
 
+[connection signal="mouse_entered" from="Start game" to="." method="_on_start_game_mouse_entered"]
 [connection signal="pressed" from="Start game" to="." method="_on_start_game_pressed"]
+[connection signal="mouse_entered" from="Controls" to="." method="_on_controls_mouse_entered"]
 [connection signal="pressed" from="Controls" to="." method="_on_controls_pressed"]
+[connection signal="mouse_entered" from="Exit" to="." method="_on_exit_mouse_entered"]
 [connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]
