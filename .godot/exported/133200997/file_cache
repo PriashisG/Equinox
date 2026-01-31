@@ -1,0 +1,21 @@
+res://levels/level_1.tscn::1dcdc2f89a5e36a49d5a40e39509d536::1769839852::res://.godot/exported/133200997/export-12535bc1b7f5d974130914d712c29d37-level_1.scn
+res://levels/level_2.tscn::f0fffbd2d9894b714e8ff2ebd560ed59::1769839852::res://.godot/exported/133200997/export-c54f4559c5b4f25cf8605c0540fcbd9b-level_2.scn
+res://scenes/box.tscn::c579805050734f2e4bbddee139c96b90::1769788018::res://.godot/exported/133200997/export-06a1a1284033147b2f9035f533de0da1-box.scn
+res://scenes/coming_soon.tscn::40b3bc90ddaf97c6aa3332c1fd875901::1769788018::res://.godot/exported/133200997/export-362f48e77e64bd4d7ac6231506542b60-coming_soon.scn
+res://scenes/Controls.tscn::8a072ede5d56f2fedc01951cf26cab0d::1769788018::res://.godot/exported/133200997/export-9d2a72a1321f4d26abe23fbd397f775b-Controls.scn
+res://scenes/gate.tscn::e9a33c795c6b83e60e648a9a73622a08::1769839852::res://.godot/exported/133200997/export-9b11fd4cfdf6aa941bb10170271cb1db-gate.scn
+res://scenes/Level choice.tscn::8eb437c335867ac1999ecc8a2dc5496b::1769839852::res://.godot/exported/133200997/export-e507c2e33f5390bdbe68407c717fa004-Level choice.scn
+res://scenes/lever2.tscn::d0ef66cf65daf04e2eeccbeeff6dc3c2::1769788018::res://.godot/exported/133200997/export-345b4b684070d6f83ec1d7ea075df4c0-lever2.scn
+res://scenes/lever.tscn::9e3ef5a10760cd1a7062e9ac0a36a14c::1769788018::res://.godot/exported/133200997/export-9ac1675886fe9248896c7d15744cec83-lever.scn
+res://scenes/lower_spike.tscn::d786f95730c09b32c86b5a5bedbb3cee::1769788018::res://.godot/exported/133200997/export-2c26e87d5ccc6adb58a29705322d84fe-lower_spike.scn
+res://scenes/Main Menu.tscn::49286a9ee9d8c04ff363ed4552c6de27::1769839852::res://.godot/exported/133200997/export-c6d697945f99b7bcdc65b9b589615a29-Main Menu.scn
+res://scenes/mission complete.tscn::b995479a6a041984bad5bb0761fac6df::1769839853::res://.godot/exported/133200997/export-83637d6e7114ab7d0fe0fbf88b92f6ad-mission complete.scn
+res://scenes/mission failed.tscn::5bf71668840553aecf35b4d9d9950f86::1769839956::res://.godot/exported/133200997/export-d5161f6a8f6645c00b40ed83c9404cd5-mission failed.scn
+res://scenes/player1.tscn::830f86600169787add8d448da34e374c::1769839852::res://.godot/exported/133200997/export-9bd5c4518a33e86c08d7664e6a27526f-player1.scn
+res://scenes/player2.tscn::cd322ca787c3f03113ac59367383dc07::1769839852::res://.godot/exported/133200997/export-dfda35cac510ccdb670da168997b12f8-player2.scn
+res://scenes/pressure_plate.tscn::af212c02457e392814d564789802b36b::1769788019::res://.godot/exported/133200997/export-421b656bc73e592ca8f4c4be9a7840b7-pressure_plate.scn
+res://scenes/Restart.tscn::56a47f41cdcfe156dcec4fc0f1a7089f::1769788018::res://.godot/exported/133200997/export-a4fb866c40075c02b00a2c817fa70dee-Restart.scn
+res://scenes/Stroy.tscn::46256f12a94172e9d714347cac81d436::1769788018::res://.godot/exported/133200997/export-8277ff9a66e1559b0552d94041bf8fae-Stroy.scn
+res://scenes/upper_platform.tscn::84e7cbea769b57b53b38a2d91a97bff8::1769788019::res://.godot/exported/133200997/export-01687c119167071fd6a7c60af59d1694-upper_platform.scn
+res://scenes/upper_spike.tscn::d3e1fb589527cfa3f4c4acd06ef86635::1769788019::res://.godot/exported/133200997/export-5311753b73b491ac7c91039df1d82d3a-upper_spike.scn
+res://default_bus_layout.tres::d91b516f02cb10e8f1a35db3d10f00d1::1769804711::res://.godot/exported/133200997/export-19246414aa9fb561ced4b8dce477acec-default_bus_layout.res
