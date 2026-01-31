@@ -5,3 +5,11 @@ res://scenes/gate.tscn
 res://levels/level_1.tscn
 res://levels/level_2.tscn
 res://scenes/main_menu.gd
+res://scenes/Level choice.tscn
+res://scenes/level_choice.gd
+res://levels/game.gd
+res://scripts/level_2.gd
+res://scenes/mission complete.tscn
+res://scripts/mission_complete.gd
+res://scenes/mission failed.tscn
+res://scripts/mission_failed.gd

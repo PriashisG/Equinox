@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=3 uid="uid://c2bqhemljwggg"]
+[gd_scene load_steps=33 format=3 uid="uid://c2bqhemljwggg"]
 
 [ext_resource type="PackedScene" uid="uid://cram4t48cdgv4" path="res://scenes/player1.tscn" id="1_5skjb"]
 [ext_resource type="Script" path="res://levels/game.gd" id="1_nsmrk"]
@@ -20,6 +20,7 @@
 [ext_resource type="Script" path="res://scripts/restart.gd" id="18_k22yt"]
 [ext_resource type="AudioStream" uid="uid://bkwi7f7k1jki0" path="res://assets/audio/bgm.mp3" id="19_1vfya"]
 [ext_resource type="AudioStream" uid="uid://b71fvbsny8i3p" path="res://assets/audio/gate.mp3" id="20_f8nyc"]
+[ext_resource type="AudioStream" uid="uid://weka8f3y8w53" path="res://assets/audio/click.mp3" id="21_y3p26"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_nh0df"]
 
@@ -298,6 +299,10 @@ bus = &"BGM"
 
 [node name="Audio_gate" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("20_f8nyc")
+bus = &"SFX"
+
+[node name="Audio_click" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("21_y3p26")
 bus = &"SFX"
 
 [connection signal="pressed" from="CanvasLayer/TextureButton" to="." method="_on_texture_button_pressed"]

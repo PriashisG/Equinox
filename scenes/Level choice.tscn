@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://c460neu44do5k"]
+[gd_scene load_steps=15 format=3 uid="uid://c460neu44do5k"]
 
 [ext_resource type="Script" path="res://scenes/level_choice.gd" id="1_lf3v4"]
 [ext_resource type="Texture2D" uid="uid://dh5lsy3od422q" path="res://assets/main menu/background.png" id="1_r0egu"]
@@ -12,6 +12,8 @@
 [ext_resource type="Texture2D" uid="uid://c85wlkydynaqw" path="res://assets/Level choice/3_-_level_3.png" id="10_4olpe"]
 [ext_resource type="Texture2D" uid="uid://bc2pr8ugt73kv" path="res://assets/Level choice/4_-_lock.png" id="10_b6v2c"]
 [ext_resource type="Texture2D" uid="uid://b76hq3bcod2t0" path="res://assets/Level choice/3_-_level_3_with_click.png" id="11_nf1fx"]
+[ext_resource type="AudioStream" uid="uid://cp3jbwwiy8rxw" path="res://assets/audio/hover.wav" id="13_sypth"]
+[ext_resource type="AudioStream" uid="uid://weka8f3y8w53" path="res://assets/audio/click.mp3" id="14_b2o07"]
 
 [node name="LevelChoice" type="Control"]
 layout_mode = 3
@@ -78,7 +80,19 @@ texture_hover = ExtResource("11_nf1fx")
 position = Vector2(335, 492)
 texture = ExtResource("10_b6v2c")
 
+[node name="Audio_hover" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("13_sypth")
+bus = &"SFX"
+
+[node name="Audio_click" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("14_b2o07")
+bus = &"SFX"
+
+[connection signal="mouse_entered" from="Button" to="." method="_on_button_mouse_entered"]
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="mouse_entered" from="TextureButton" to="." method="_on_texture_button_mouse_entered"]
 [connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]
+[connection signal="mouse_entered" from="Level 2/level2_button" to="." method="_on_level_2_button_mouse_entered"]
 [connection signal="pressed" from="Level 2/level2_button" to="." method="_on_level_2_button_pressed"]
+[connection signal="mouse_entered" from="level 3/level3_button" to="." method="_on_level_3_button_mouse_entered"]
 [connection signal="pressed" from="level 3/level3_button" to="." method="_on_level_3_button_pressed"]

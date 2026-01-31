@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=3 uid="uid://cobj1j5e12edx"]
+[gd_scene load_steps=33 format=3 uid="uid://cobj1j5e12edx"]
 
 [ext_resource type="Script" path="res://scripts/level_2.gd" id="1_c68uq"]
 [ext_resource type="PackedScene" uid="uid://cram4t48cdgv4" path="res://scenes/player1.tscn" id="1_n4kde"]
@@ -22,6 +22,7 @@
 [ext_resource type="Script" path="res://scripts/restart.gd" id="20_dtfev"]
 [ext_resource type="AudioStream" uid="uid://bkwi7f7k1jki0" path="res://assets/audio/bgm.mp3" id="21_gfy8o"]
 [ext_resource type="AudioStream" uid="uid://4w316fcdvnot" path="res://assets/audio/lever.mp3" id="22_y41go"]
+[ext_resource type="AudioStream" uid="uid://weka8f3y8w53" path="res://assets/audio/click.mp3" id="23_l4fqb"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_jrptj"]
 
@@ -297,6 +298,10 @@ bus = &"BGM"
 [node name="Audio_lever" type="AudioStreamPlayer2D" parent="."]
 position = Vector2(-557, -64)
 stream = ExtResource("22_y41go")
+bus = &"SFX"
+
+[node name="Audio_click" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("23_l4fqb")
 bus = &"SFX"
 
 [connection signal="pressed" from="CanvasLayer/TextureButton" to="." method="_on_texture_button_pressed"]

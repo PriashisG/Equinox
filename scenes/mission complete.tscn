@@ -1,9 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://cgea5yyoxq0fo"]
+[gd_scene load_steps=8 format=3 uid="uid://cgea5yyoxq0fo"]
 
 [ext_resource type="Texture2D" uid="uid://dh5lsy3od422q" path="res://assets/main menu/background.png" id="1_etcse"]
+[ext_resource type="Script" path="res://scripts/mission_complete.gd" id="1_w7ju3"]
 [ext_resource type="Texture2D" uid="uid://npvl6fw8bd1d" path="res://assets/mission complete/1_-_complete_name.png" id="2_ele5o"]
 [ext_resource type="Texture2D" uid="uid://bivvnodexhljc" path="res://assets/Story/1-_next_button.png" id="3_c6udg"]
 [ext_resource type="Texture2D" uid="uid://bintrkpgnrkgt" path="res://assets/Story/1-_next_button_with_click.png" id="4_o4kja"]
+[ext_resource type="AudioStream" uid="uid://c5vu13iye3uuq" path="res://assets/audio/complete.mp3" id="5_pv2m5"]
 
 [sub_resource type="GDScript" id="GDScript_lec7l"]
 script/source = "extends TextureButton
@@ -21,6 +23,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_w7ju3")
 
 [node name="Background" type="Sprite2D" parent="."]
 position = Vector2(565.131, 416.5)
@@ -32,6 +35,7 @@ position = Vector2(567, 287)
 texture = ExtResource("2_ele5o")
 
 [node name="TextureButton" type="TextureButton" parent="."]
+layout_mode = 0
 offset_left = 1075.0
 offset_top = 442.0
 offset_right = 1115.0
@@ -39,5 +43,9 @@ offset_bottom = 482.0
 texture_normal = ExtResource("3_c6udg")
 texture_hover = ExtResource("4_o4kja")
 script = SubResource("GDScript_lec7l")
+
+[node name="Audio_complete" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_pv2m5")
+bus = &"SFX"
 
 [connection signal="pressed" from="TextureButton" to="TextureButton" method="_on_pressed"]

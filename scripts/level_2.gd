@@ -9,6 +9,7 @@ var active_player
 @onready var camera_2d_2: Camera2D = $player2/Camera2D2
 var escaped=0
 @onready var audio_bgm: AudioStreamPlayer2D = $Audio_BGM
+@onready var audio_click: AudioStreamPlayer2D = $Audio_click
 
 
 func _on_player_reached_exit(player):
@@ -54,4 +55,6 @@ func _process(delta: float) -> void:
 
 
 func _on_texture_button_pressed() -> void:
+	audio_click.play()
+	await audio_click.finished
 	get_tree().change_scene_to_file("res://scenes/Level choice.tscn")
