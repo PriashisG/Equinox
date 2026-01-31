@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://yh4n15tv3kmp"]
+[gd_scene load_steps=12 format=3 uid="uid://yh4n15tv3kmp"]
 
 [ext_resource type="Script" path="res://scenes/main_menu.gd" id="1_hdf2d"]
 [ext_resource type="Texture2D" uid="uid://dh5lsy3od422q" path="res://assets/main menu/background.png" id="2_rtlwb"]
@@ -9,6 +9,8 @@
 [ext_resource type="Texture2D" uid="uid://cd7ycg70n86go" path="res://assets/main menu/3_-_exit_button_not_click.png" id="6_ocpmd"]
 [ext_resource type="Texture2D" uid="uid://bd0gvq2sdtfeu" path="res://assets/main menu/3_-_exit_button_click.png" id="7_dcsyv"]
 [ext_resource type="Texture2D" uid="uid://cjfxd16u7vii3" path="res://assets/main menu/0 - name.png" id="9_hn3co"]
+[ext_resource type="AudioStream" uid="uid://cp3jbwwiy8rxw" path="res://assets/audio/hover.wav" id="10_13i8y"]
+[ext_resource type="AudioStream" uid="uid://weka8f3y8w53" path="res://assets/audio/click.mp3" id="11_3sh8h"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -54,6 +56,14 @@ texture_hover = ExtResource("7_dcsyv")
 [node name="0-Name" type="Sprite2D" parent="."]
 position = Vector2(569, 120)
 texture = ExtResource("9_hn3co")
+
+[node name="Audio_hover" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("10_13i8y")
+bus = &"SFX"
+
+[node name="Audio_click" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("11_3sh8h")
+bus = &"SFX"
 
 [connection signal="pressed" from="Start game" to="." method="_on_start_game_pressed"]
 [connection signal="pressed" from="Controls" to="." method="_on_controls_pressed"]

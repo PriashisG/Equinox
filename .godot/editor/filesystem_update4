@@ -1,13 +1,7 @@
 res://scenes/Main Menu.tscn
-res://default_bus_layout.tres
-res://levels/level_1.tscn
-res://levels/game.gd
-res://levels/level_2.tscn
-res://scripts/level_2.gd
 res://scenes/player1.tscn
-res://scripts/playerMovement.gd
 res://scenes/player2.tscn
-res://scripts/pressure_plate.gd
 res://scenes/gate.tscn
-res://scripts/lever.gd
-res://scripts/lever_2.gd
+res://levels/level_1.tscn
+res://levels/level_2.tscn
+res://scenes/main_menu.gd
